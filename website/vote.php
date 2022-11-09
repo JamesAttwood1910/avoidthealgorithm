@@ -92,6 +92,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 		.react2 input {
 			padding: 5px;
+			margin: 3px 0px;
             border-style: outset;
             border-color: black;
             background-color:var(--purple);
