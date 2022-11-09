@@ -7,79 +7,75 @@
     <title>LOGIN</title>
 
     <style type="text/css">
+       :root {
+
+            --blue: #1a2238;
+            --purple: #9daaf2;
+            --orange: #ff6a3d;
+            --yellow: #f4db7d;
+        }
+
         body {
-        background-color: #1A4D2E;
-    }
 
-    form {
-        font-family: Lucida Console;
-        color: #FAF3E3;
-        margin-top: min(10%, 100px);
-        margin-left: min(10%, 100px);
-    }
+            background-color: var(--blue);
+            font-family: Lucida Console;
+            color:white;
+        }
+        
+        .boundary {
 
-    form h2 {
+            padding-top: 5%;
+            padding-bottom: 5%;
+            padding-left: 20%;
+            padding-right: 20%;
 
-        background-color: #000000;
-        width: 80px;
-        padding-left: 3px;
-        padding-top: 2px;
-        padding-bottom: 2px;
-        border-style: outset;
-    }
+        }
 
-    form a {
+        .title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-        text-decoration:none;
-        color: #000000;
-        background-color:#FF9F29;
-        height: 30px;
-        width: 50px;
-        padding: 5px;
-        border-style: outset;
-        border-color: #FAF3E3;
-    }
+        h1 {
+            text-align: center;
+            background-color: var(--orange);
+            border-style: outset;
+            border-color: black;
+            padding: 0.25% 1% 0.25%;
+            color: white;
+        }
 
-    form a:hover {
-        background-color: #FAF3E3;
-        color: #000000;
-        height: 30px;
-        width: 50px;
-        padding: 5px;
+        a {
+            
+            color: var(--purple);
+        }
 
-    }
+         a:hover {
 
-    input {
-        font-family: Lucida Console;
-        color: #000000;
-        width: 250px;
-    }
+            font-weight: bold;
+            background-color: var(--orange);
+            padding: 1% 2% 1%;
+            text-justify: inter-word;
+            border-style: outset;
+            border-color: black;
+            color: white;
+        }
 
-    button {
-        font-family: Lucida Console;
-        color: #000000;
-        padding: 5px;
-        border-style: outset;
-        border-color: #FAF3E3;
-        background-color: #FF9F29;
-    }
+        button {
+            padding: 5px;
+            border-style: outset;
+            border-color: black;
+            background-color: white;
+            font-family: Lucida Console;
+        }
 
-    button:hover {
-        background-color: #FAF3E3;
-        color: #000000;
-    }
-
-    h1 {
-        margin-left: 50%;
-        max-width: 179px;
-        font-family: Lucida Console;
-        background-color: #FAF3E3;
-        padding: 5px 10px;
-        position: center;
-        margin-top: 50px;
-
-    }
-
+        button:hover {
+            padding: 10px;
+            background-color: var(--purple);
+            color: white;
+            border-color: white;
+        }
 
 
 
@@ -90,34 +86,40 @@
 
 <body>
 
-    <h1>Avoid the Algorithm</h1>
+    <div class = "boundary">
 
-     <form action="login_backend.php" method="post">
+       <div class = title>
+            <h1> Avoid the Algorithm </h1>
+        </div>
 
-        <h2>LOGIN</h2>
+         <form action="login_backend.php" method="post">
 
-        <?php if (isset($_GET['error'])) { ?>
+            <h2>LOGIN</h2>
 
-            <p class="error"><?php echo $_GET['error']; ?></p>
+            <?php if (isset($_GET['error'])) { ?>
 
-        <?php } ?>
+                <p class="error"><?php echo $_GET['error']; ?></p>
 
-        <label>Email:</label><br>
+            <?php } ?>
 
-        <input type="text" name="email"><br>
-        <br>
+            <label>Email:</label><br>
 
-        <label>Password:</label><br>
+            <input type="text" name="email"><br>
+            <br>
 
-        <input type="password" name="password" ><br> 
-        <br>
+            <label>Password:</label><br>
 
-        <button type="submit">Login</button>
-        <br>
+            <input type="password" name="password" ><br> 
+            <br>
 
-        <p>Don't have an account? <a href="user_subscription.php">Sign up now</a>.</p>
+            <button type="submit">Login</button>
+            <br>
 
-     </form>
+            <p>Don't have an account? <a href="user_subscription.php">Sign up now</a>.</p>
+
+         </form>
+
+     </div>
 
 </body>
 
