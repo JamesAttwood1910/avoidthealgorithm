@@ -17,138 +17,117 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 <style type="text/css">
 
-	body {
-		background-color: #1A4D2E;
-	}
+	:root {
 
+			--blue: #1a2238;
+			--purple: #9daaf2;
+			--orange: #ff6a3d;
+			--yellow: #f4db7d;
+		}
+
+	body {
+
+			background-color: var(--blue);
+			font-family: Lucida Console;
+	}
+		
+	.boundary {
+
+			margin-top: 5%;
+			margin-bottom: 5%;
+			margin-left: 20%;
+			margin-right: 20%;
+
+	}
 
 	.bottombuttons {
+			text-align: center;
+			margin-top: 30px;
 
-			float: left;
-			margin-left: 360px;
+		}
+
+		.bottombuttons a {
+			margin-left: 1%;
+			margin-right: 1%;
+			color: white;
+
+		}
+
+		.bottombuttons a:hover {
+
+  			font-weight: bold;
+  			background-color: var(--orange);
+  			padding: 1% 2% 1%;
+  			text-justify: inter-word;
+			border-style: outset;
+			border-color: black;
+
+
+		}
+
+		.articleinfo {
+			text-align: justify;
+			text-justify: inter-word;
+			border-style: outset;
+			border-color: black;
 			margin-top: 40px;
-			overflow: hidden;
+			background-color: white;
+			padding: 15px 30px 20px;
+			color: var(--blue);
 			
+
 		}
 
-	.bottombuttons a {
+		form { 
+			margin-top: 20px;
 
+		}
+
+		label {
+			color: white; 
+			margin-top: 30px;
+		}
+
+
+		input {
+			color: black;
+			margin-top: 15px;
 			font-family: Lucida Console;
-			color: #FAF3E3;
-			margin-left: 25px;
-			margin-right: 25px;
+			width: 300px;
+			height: 30px;
+			border-style: outset;
+			border-color: black;
+			font-weight: bold;
+
+
 		}
 
-	.bottombuttons a:hover {
+		button { 
+			background-color: var(--purple);
+			border-style: outset;
+			border-color: black;
+			padding: 10px;
+			font-weight: bold;
 
-  			color: #000000;
 		}
-	
-	.articleinfo {
-		float: left;
-		margin-left: 350px;
-		margin-right: 300px;
-		margin-top: 50px;
-		border-style: outset;
-		border-color: #FAF3E3;
-		padding: 8px;
-		overflow: hidden;
-		color: #FAF3E3;
-		font-family: Lucida Console;
-	}
 
-	.label1 {
-		float: left;
-		margin-left: 350px;
-		margin-right: 300px;
-		margin-top: 50px;
-		font-family: Lucida Console;
-		color: #FAF3E3;
-	}
+		button:hover {
+			padding: 15px;
+			color: var(--orange);
+			background-color: white;
+		}
 
-	.label2 {
-		float: left;
-		margin-left: 350px;
-		margin-right: 300px;
-		font-family: Lucida Console;
-		color: #FAF3E3;
-	}
-	.text {
-		float: left;
-		margin-left: 550px;
-		margin-right: 300px;
-		font-family: Lucida Console;
-		color: #FAF3E3;
-		position: relative;
-		bottom: 20px;
-		height: 40px;
-		width: 400px;
-		padding-left: 10px;
-	}
+/*		.articleinfo {
+			
+			border-style: outset;
+			border-color: black;
+			margin-top: 40px;
+			background-color: white;
+			padding: 15px 30px 20px;
+			color: var(--blue);
+		
+		}*/
 
-	.text:focus {
-		outline: none;
-		border-color: #FAF3E3;
-		background-color: #FF9F29;
-		border-style: solid;
-		color: #000000;
-	}
-
-	.text:valid {
-		outline: none;
-		border-color: #FAF3E3;
-		background-color: #FF9F29;
-		border-style: solid;
-		color: #000000;
-	}
-
-	.options {
-		float: left;
-		margin-left: 750px;
-		margin-right: 300px;
-		font-family: Lucida Console;
-		color: #FAF3E3;
-		position: relative;
-		bottom: 20px;
-		height: 20px;
-		width: 200px;
-		padding-left: 7px;
-	}
-
-	.options:focus {
-		outline: none;
-		border-color: #FAF3E3;
-		background-color: #FF9F29;
-		border-style: solid;
-		color: #000000;
-	}
-
-	.options:valid {
-		outline: none;
-		border-color: #FAF3E3;
-		background-color: #FF9F29;
-		border-style: solid;
-		color: #000000;
-	}
-
-	.submit {
-		float: left;
-		margin-left: 750px;
-		margin-right: 300px;
-		margin-top: 10px;
-		padding-top: 5px;
-		padding-bottom: 5px;
-		font-family: Lucida Console;
-		background-color: #FF9F29;
-		color: #000000;
-	}
-
-	.submit:hover {
-
-		color: #000000;
-		background-color: #FAF3E3;
-		border-color: #000000;
-	}
 
 
 
@@ -193,38 +172,47 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 	?>
 
-	<div class="bottombuttons">
-  		<a href="http://localhost/phpmongodb/website/home.php">Home</a>
-  		<a href="http://localhost/phpmongodb/website/vote.php">React</a>
-  		<a href="http://localhost/phpmongodb/website/previous.php">Previous</a>
-  		<a href="http://localhost/phpmongodb/website/suggest.php">Suggest</a>
-  		<a href="http://localhost/phpmongodb/website/premium.php">Premium</a>
-	</div> 
+	<div class = "boundary">
+		
 
-	<div class="articleinfo">
-		<H3>Suggest a source:</H3>
-		<b>Do you know a particular blog or website that does interesting articles? Do you want to share this interesting knowledge with others?</b>
-		<b>Then make a us suggestion of a site you want to see include in the pool of sources used by avoidthealgorithm.</b>
-		<b>Fill out the form below!</b>
+		<div class="bottombuttons">
+	  		<a href="http://localhost/phpmongodb/website/home.php">Home</a>
+	  		<a href="http://localhost/phpmongodb/website/vote.php">React</a>
+	  		<a href="http://localhost/phpmongodb/website/previous.php">Previous</a>
+	  		<a href="http://localhost/phpmongodb/website/suggest.php">Suggest</a>
+	  		<a href="http://localhost/phpmongodb/website/premium.php">Premium</a>
+		</div> 
+
+		<div class="articleinfo">
+			<H3>Suggest a source:</H3>
+			<b>Do you know a particular blog or website that does interesting articles? Do you want to share this interesting knowledge with others?</b>
+			<b>Then make a us suggestion of a site you want to see include in the pool of sources used by avoidthealgorithm.</b>
+			<b>Fill out the form below!</b>
+		</div>
+
+		<form action = "suggest.php" method="post">
+			<label class = "label1">Source: </label>
+			<input class = "text" type="text" name="source", id = "source", placeholder="www.bbc.co.uk" required><br><br>
+			<label class = "label2">What topic best describes this source: </label>
+			<input class = "options" list="source_topic", name = "source_topic", placeholder="Double click for options" required>
+	  		<datalist id="source_topic">
+	    	<option value="entertainment">
+	    	<option value="science">
+	    	<option value="technology">
+	    	<option value="disability">
+	    	<option value="business">
+	    	<option value="arts">
+	    	<option value="health">
+	    	<option value="sport">
+	  		</datalist>
+	  		<br><br>
+	  		<button type="submit">Submit
+	  		</button>  
+		</form>
+
+
 	</div>
 
-	<form action = "suggest.php" method="post">
-		<label class = "label1">Source: </label>
-		<input class = "text" type="text" name="source", id = "source", placeholder="www.bbc.co.uk" required><br>
-		<label class = "label2">What topic best describes this source: </label>
-		<input class = "options" list="source_topic", name = "source_topic", placeholder="Double click for options" required>
-  		<datalist id="source_topic">
-    	<option value="entertainment">
-    	<option value="science">
-    	<option value="technology">
-    	<option value="disability">
-    	<option value="business">
-    	<option value="arts">
-    	<option value="health">
-    	<option value="sport">
-  		</datalist>
-  		<input class = "submit" type="submit", value = "Submit">
-	</form>
 
 </body>
 </html>
