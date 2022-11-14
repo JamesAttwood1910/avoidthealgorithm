@@ -1,0 +1,15 @@
+# Context
+
+We have developed our website and applied CCS to it. However when the window is resized a lot of the formatting becomes disjointed with a reduced user experience. 
+
+# Story
+
+As a FS Developer I want the css of the websites main pages to be refactured to ensure that a high quality user experience is maintained for windows of different dimmensions. 
+
+# Acceptance criteria
+
+No text falls outside of its boundary box when window resized. 
+
+Layout of page is visually appealing when window resized in variety of ways
+
+No overlapping elements when window resized. 
