@@ -257,6 +257,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 		  		<a href="http://localhost/phpmongodb/website/previous.php">Previous</a>
 		  		<a href="http://localhost/phpmongodb/website/suggest.php">Suggest</a>
 		  		<a href="http://localhost/phpmongodb/website/premium.php">Premium</a>
+		  		<a href="http://localhost/phpmongodb/website/logout.php">Logout</a>
 		</div> 
 
 		<div class="articleinfo">
