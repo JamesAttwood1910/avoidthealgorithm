@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+session_start(); # Start session - to store user info to be used across multiple pages. 
 
 ?>
 
@@ -19,7 +19,7 @@ session_start();
 
 	require("functions/functions.php");
 
-	$collection = connect_mongodb()->news_db->users;
+	$collection = connect_mongodb()->news_db->users; # get users collection;
 
 	$email = isset($_POST["email"] ) ? $_POST["email"]: '';
 
@@ -27,7 +27,7 @@ session_start();
 
 	$cursor = $collection->find(
 		[
-			'email' => $email
+			'email' => $email # get user using email entered in login. 
 
 		]
 	);
@@ -35,22 +35,23 @@ session_start();
 
 	foreach ($cursor as $doc) {
 
-		$password_users = $doc->password;
-		$first_name = $doc->First_name;
+		$password_users = $doc->password; # get users password saved in collection
+		$first_name = $doc->First_name; # get users first name saved in collection
 		# code...
 	}
 
 
-	if (password_verify($password, $password_users)) {
+	if (password_verify($password, $password_users)) { # verify if users password entered is same as that saved in collection. 
 
-		$_SESSION["loggedin"] = true;
-		$_SESSION["email"] = $email;
+		$_SESSION["loggedin"] = true; #set loggedin as true
+		$_SESSION["email"] = $email; 
 		$_SESSION['user'] = $first_name;
 
-		header("location: website/vote.php");
+		header("location: website/vote.php"); # send to voting page
 	} else {
 
-		echo "Oops! Something went wrong. Please try again later.";
+		$_SESSION["loggedin"] = false;
+		header("location: website/login_failed.php"); # if loggin fails then send to something went wrong login page. 
 
 	}
 
