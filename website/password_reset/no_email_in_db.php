@@ -1,12 +1,3 @@
-
-
-<?php
-
-session_start(); # Start session - to store user info to be used across multiple pages. 
-
-?>
-
-
 <!DOCTYPE html>
 
 <html>
@@ -95,15 +86,13 @@ session_start(); # Start session - to store user info to be used across multiple
             <h1> Avoid the Algorithm </h1>
         </div>
 
-        <h3>Something went wrong. Please try logging in again.</h3>
+        <h3>The email you entered is not registered in our database. You can sign up or try reseting your password with a different email.</h3>
 
         <div class = "bottombuttons">
 
-                <a href="../login_page.php">Login</a>
+                <a href="../../user_subscription.php">Sign up now</a>
 
-                <a href="../user_subscription.php">Sign up now</a>
-
-                <a href="password_reset/password_reset.php">Reset password</a>
+                <a href="password_reset.php">Reset password</a>
         </div>
 
      </div>

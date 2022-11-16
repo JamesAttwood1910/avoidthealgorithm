@@ -1,19 +1,10 @@
-
-
-<?php
-
-session_start(); # Start session - to store user info to be used across multiple pages. 
-
-?>
-
-
 <!DOCTYPE html>
 
 <html>
 
 <head>
 
-    <title>LOGIN</title>
+    <title>Reset Password</title>
 
     <style type="text/css">
        :root {
@@ -55,20 +46,12 @@ session_start(); # Start session - to store user info to be used across multiple
             color: white;
         }
 
-        .bottombuttons {
-            text-align: center;
-            margin-top: 30px;
-
+        a {
+            
+            color: var(--purple);
         }
 
-        .bottombuttons a {
-            margin-left: 1%;
-            margin-right: 1%;
-            color: white;
-
-        }
-
-        .bottombuttons a:hover {
+         a:hover {
 
             font-weight: bold;
             background-color: var(--orange);
@@ -76,9 +59,24 @@ session_start(); # Start session - to store user info to be used across multiple
             text-justify: inter-word;
             border-style: outset;
             border-color: black;
-
-
+            color: white;
         }
+
+        input {
+            padding: 5px;
+            border-style: outset;
+            border-color: black;
+            background-color: white;
+            font-family: Lucida Console;
+            width: 500px;
+        }
+/*
+        input:hover {
+            padding: 10px;
+            background-color: var(--purple);
+            color: white;
+            border-color: white;
+        }*/
 
 
 
@@ -95,16 +93,13 @@ session_start(); # Start session - to store user info to be used across multiple
             <h1> Avoid the Algorithm </h1>
         </div>
 
-        <h3>Something went wrong. Please try logging in again.</h3>
+         <form action="password_reset_backend.php" method="post">
 
-        <div class = "bottombuttons">
+            <h3>If you have forgotten your password, you can reset it by entering your email below.</h3>
 
-                <a href="../login_page.php">Login</a>
-
-                <a href="../user_subscription.php">Sign up now</a>
-
-                <a href="password_reset/password_reset.php">Reset password</a>
-        </div>
+            <input class = "text" type="text" name="email" value="Please enter the email registered to your account">
+            <input type="submit" name="send" value="Send reset code">
+         </form>
 
      </div>
 

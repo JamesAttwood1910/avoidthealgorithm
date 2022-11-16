@@ -1,19 +1,10 @@
-
-
-<?php
-
-session_start(); # Start session - to store user info to be used across multiple pages. 
-
-?>
-
-
 <!DOCTYPE html>
 
 <html>
 
 <head>
 
-    <title>LOGIN</title>
+    <title>Reset Password</title>
 
     <style type="text/css">
        :root {
@@ -55,20 +46,12 @@ session_start(); # Start session - to store user info to be used across multiple
             color: white;
         }
 
-        .bottombuttons {
-            text-align: center;
-            margin-top: 30px;
-
+        a {
+            
+            color: var(--purple);
         }
 
-        .bottombuttons a {
-            margin-left: 1%;
-            margin-right: 1%;
-            color: white;
-
-        }
-
-        .bottombuttons a:hover {
+         a:hover {
 
             font-weight: bold;
             background-color: var(--orange);
@@ -76,9 +59,24 @@ session_start(); # Start session - to store user info to be used across multiple
             text-justify: inter-word;
             border-style: outset;
             border-color: black;
-
-
+            color: white;
         }
+
+        input {
+            padding: 5px;
+            border-style: outset;
+            border-color: black;
+            background-color: white;
+            font-family: Lucida Console;
+            width: 500px;
+        }
+/*
+        input:hover {
+            padding: 10px;
+            background-color: var(--purple);
+            color: white;
+            border-color: white;
+        }*/
 
 
 
@@ -95,16 +93,15 @@ session_start(); # Start session - to store user info to be used across multiple
             <h1> Avoid the Algorithm </h1>
         </div>
 
-        <h3>Something went wrong. Please try logging in again.</h3>
+         <form action="password_reset_backend_part_3.php" method="post">
 
-        <div class = "bottombuttons">
+            <h3>You can now reset your password in the below box.</h3>
 
-                <a href="../login_page.php">Login</a>
+            <input type="password" name="password", id="password" required><br>
+            <input type="password" name="confirm_password", id="confirm_password" required><br>
+            <input type="submit" name="send" value="Save new password">
 
-                <a href="../user_subscription.php">Sign up now</a>
-
-                <a href="password_reset/password_reset.php">Reset password</a>
-        </div>
+         </form>
 
      </div>
 

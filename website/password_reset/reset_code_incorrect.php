@@ -1,19 +1,10 @@
-
-
-<?php
-
-session_start(); # Start session - to store user info to be used across multiple pages. 
-
-?>
-
-
 <!DOCTYPE html>
 
 <html>
 
 <head>
 
-    <title>LOGIN</title>
+    <title>Password Reset</title>
 
     <style type="text/css">
        :root {
@@ -95,15 +86,15 @@ session_start(); # Start session - to store user info to be used across multiple
             <h1> Avoid the Algorithm </h1>
         </div>
 
-        <h3>Something went wrong. Please try logging in again.</h3>
+        <h3>The reset code you have entered is incorrect. Please select one of the below options.</h3>
 
         <div class = "bottombuttons">
 
-                <a href="../login_page.php">Login</a>
+                <a href="../../login_page.php">Login</a>
+                
+                <a href="../../user_subscription.php">Sign up now</a>                
 
-                <a href="../user_subscription.php">Sign up now</a>
-
-                <a href="password_reset/password_reset.php">Reset password</a>
+                <a href="password_reset.php">Reset password</a>
         </div>
 
      </div>
