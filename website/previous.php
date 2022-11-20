@@ -159,54 +159,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 	}
 
-	// echo $reactions[0];
-
-
-
-	// $cursor = $collection->find(
-
-	// 	array('user_email' => $_SESSION["email"]),
-	// 	$options
-	// );
-
-	// echo $cursor;
-
-
-	// $titles = array();
-	// $links = array();
-	// $dates_sent = array();
-
-	// foreach ($cursor as $doc) {
-
-	// 	echo $doc->articleID;
-
-		// $article = $doc->articleID;
-
-		// $date_sent = $doc->date_sent;
-		// $dates_sent[] = $date_sent;
-
-		// $cursor2 = $collection2->find(
-		// 	[
-		// 		'_id' => new MongoDB\BSON\ObjectID($article)
-
-		// 	]
-
-		// );
-
-		// foreach ($cursor2 as $doc2) {
-			
-		// 	$article_title = $doc2->title;
-		// 	$titles[] = $article_title;
-
-		// 	$article_link = $doc2->url;
-		// 	$links[] = $article_link;
-
-		// }
-
-	// }
-
-
-
 	?>
 
 	<div class = "boundary">
@@ -255,51 +207,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 	    <!-- <span class = "article_bound_components">Reaction Score</span> -->
 	    </div>
 
-<!-- 	    <div class = "article_boundary">
-	    <span class = "article_bound_components">Date</span>
-	    <a class = "article_bound_components" href="">Title of link. Title of link. Title of link. Title of link/ Title of link Title of link. Title of link. Title of link. Title of link/ Title of link</a>
-	    <span class = "article_bound_components">Reaction Score</span>
-	    </div>
 
-	    <div class = "article_boundary">
-	    <span class = "article_bound_components">Date</span>
-	    <a class = "article_bound_components" href="">Title of link</a>
-	    <span class = "article_bound_components">Reaction Score</span>
-	    </div>
-	    
-	    <div class = "article_boundary">
-	    <span class = "article_bound_components">Date</span>
-	    <a class = "article_bound_components" href="">Title of link</a>
-	    <span class = "article_bound_components">Reaction Score</span>
-	    </div>
-
-	    <div class = "article_boundary">
-	    <span class = "article_bound_components">Date</span>
-	    <a class = "article_bound_components" href="">Title of link</a>
-	    <span class = "article_bound_components">Reaction Score</span>
-	    </div>
- -->
-		<!-- <div class = "div_line">
-		<div class = "div_vert">Title</div>
-		<div class = "div_vert">Socre</div>
-		</div>
-		<div class = "div_line"><a href="https://www.geeksforgeeks.org/how-to-make-div-elements-display-inline-using-css/">How to make div elements display inline using css</a></div>
-
-
-		<div class="main">
-        <div>Article 1</div>
-        <a href="https://www.geeksforgeeks.org/how-to-make-div-elements-display-inline-using-css/">How to make div elements display inline using css</a>
-        <div>Score : 1</div>
-    	</div>
-
-		<div class = "div_line">
-		<div class = "div_vert">Title</div>
-		<div class = "div_vert">Socre</div>
-		</div>
-		<div class = "div_line"><a href="https://www.geeksforgeeks.org/how-to-make-div-elements-display-inline-using-css/">How to make div elements display inline using css</a></div>
-
-
-		 -->
 	</div>
 </body>
 </html>
