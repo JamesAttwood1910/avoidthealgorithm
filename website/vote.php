@@ -130,32 +130,33 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 		$date = date("Y-m-d");
 
-		$date_test = "2022-11-08";
+		$date_test = "2022-11-17";
 
 		$collection = connect_mongodb()->news_db->sent_articles;
 
 		$collection2 = connect_mongodb()->news_db->news_articles;
 
-		$cursor_1 = $collection->find(
+		$cursor = $collection->find(
 
-			array('user_email' => $_SESSION["email"],
-				'date_sent' => $date_test)
-		);
+			array('user_email' => $_SESSION["email"])
+			);
 
 		$count  = 0;
 
-		foreach ($cursor_1 as $document) {
+		foreach ($cursor as $document) {
 	    	$count++;
 		}
 
-		echo $count;
+		#echo $count;
 
-		if ($count == 1) {
+		if ($count > 0) {
+
+			$options = ['sort' => ['date_sent' => -1], 'limit' => 1];
 
 			$cursor = $collection->find(
 
-				array('user_email' => $_SESSION["email"],
-					'date_sent' => $date_test)
+				array('user_email' => $_SESSION["email"]),
+				$options
 			);
 
 

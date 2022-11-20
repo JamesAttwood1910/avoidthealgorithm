@@ -112,39 +112,38 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 	require("../functions/functions.php");
 
-	$date = date("Y-m-d");
+	#$date = date("Y-m-d");
 
-	$date_prior = date( "Y-m-d", strtotime( $date . "-2 day"));
+	#$date_prior = date( "Y-m-d", strtotime( $date . "-2 day"));
 
 	$collection = connect_mongodb()->news_db->sent_articles;
 
 	$collection2 = connect_mongodb()->news_db->news_articles;
 
-	$cursor = $collection->find(
+	// $options = ['sort' => ['date_sent' => -1], 'limit' => 1];
 
-		array('user_email' => $_SESSION["email"],
-			'date_sent' => array('$gte' => $date_prior,
-							'$lte' => $date))
-	);
+	$query = array('user_email' => $_SESSION['email']);
 
+	$cursor = $collection->find($query, array('sort' => ['date_sent' => -1], 'limit'=>5));
 
 	$titles = array();
 	$links = array();
 	$dates_sent = array();
+	$reactions = array();
 
 	foreach ($cursor as $doc) {
-
-		$article = $doc->articleID;
+		// var_dump($doc);
 
 		$date_sent = $doc->date_sent;
 		$dates_sent[] = $date_sent;
 
+		// $reaction = $doc->reaction;
+		// $reactions = $reaction;
+
+		$article = $doc->articleID;
+
 		$cursor2 = $collection2->find(
-			[
-				'_id' => new MongoDB\BSON\ObjectID($article)
-
-			]
-
+			array('_id' => new MongoDB\BSON\ObjectID($article))
 		);
 
 		foreach ($cursor2 as $doc2) {
@@ -157,9 +156,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 		}
 
+
 	}
-
-
 
 	?>
 
@@ -176,76 +174,39 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 		<div class="articleinfo">
 			<H3>Your last five articles are: </H3>
+
 		</div>
 
 		<div class = "article_boundary">
-	    <span class = "article_bound_components">Date</span>
-	    <a class = "article_bound_components" href="">Title of link/ Title of link</a>
-	    <span class = "article_bound_components">Reaction Score</span>
+	    <span class = "article_bound_components"> <?php echo $dates_sent[0]  ?> </span>
+	    <a class = "article_bound_components" href="<?php echo $links[0]  ?>"> <?php echo $titles[0]  ?></a>
+	    <!-- <span class = "article_bound_components">Reaction Score</span> -->
 	    </div>
 
 	    <div class = "article_boundary">
-	    <span class = "article_bound_components">Date</span>
-	    <a class = "article_bound_components" href="">Title of link. Title of link. Title of link. Title of link/ Title of link Title of link. Title of link. Title of link. Title of link/ Title of link</a>
-	    <span class = "article_bound_components">Reaction Score</span>
+	    <span class = "article_bound_components"> <?php echo $dates_sent[1]  ?> </span>
+	    <a class = "article_bound_components" href="<?php echo $links[1]  ?>"> <?php echo $titles[1]  ?></a>
+	    <!-- <span class = "article_bound_components">Reaction Score</span> -->
 	    </div>
 
 	    <div class = "article_boundary">
-	    <span class = "article_bound_components">Date</span>
-	    <a class = "article_bound_components" href="">Title of link</a>
-	    <span class = "article_bound_components">Reaction Score</span>
-	    </div>
-	    
-	    <div class = "article_boundary">
-	    <span class = "article_bound_components">Date</span>
-	    <a class = "article_bound_components" href="">Title of link</a>
-	    <span class = "article_bound_components">Reaction Score</span>
+	    <span class = "article_bound_components"> <?php echo $dates_sent[2]  ?> </span>
+	    <a class = "article_bound_components" href="<?php echo $links[2]  ?>"> <?php echo $titles[2]  ?></a>
+	    <!-- <span class = "article_bound_components">Reaction Score</span> -->
 	    </div>
 
 	    <div class = "article_boundary">
-	    <span class = "article_bound_components">Date</span>
-	    <a class = "article_bound_components" href="">Title of link</a>
-	    <span class = "article_bound_components">Reaction Score</span>
+	    <span class = "article_bound_components"> <?php echo $dates_sent[3]  ?> </span>
+	    <a class = "article_bound_components" href="<?php echo $links[3]  ?>"> <?php echo $titles[3]  ?></a>
+	    <!-- <span class = "article_bound_components">Reaction Score</span> -->
 	    </div>
 
-		<!-- <div class = "div_line">
-		<div class = "div_vert">Title</div>
-		<div class = "div_vert">Socre</div>
-		</div>
-		<div class = "div_line"><a href="https://www.geeksforgeeks.org/how-to-make-div-elements-display-inline-using-css/">How to make div elements display inline using css</a></div>
+	    <div class = "article_boundary">
+	    <span class = "article_bound_components"> <?php echo $dates_sent[4]  ?> </span>
+	    <a class = "article_bound_components" href="<?php echo $links[4]  ?>"> <?php echo $titles[4]  ?></a>
+	    <!-- <span class = "article_bound_components">Reaction Score</span> -->
+	    </div>
 
-
-		<div class="main">
-        <div>Article 1</div>
-        <a href="https://www.geeksforgeeks.org/how-to-make-div-elements-display-inline-using-css/">How to make div elements display inline using css</a>
-        <div>Score : 1</div>
-    	</div>
-
-		<div class = "div_line">
-		<div class = "div_vert">Title</div>
-		<div class = "div_vert">Socre</div>
-		</div>
-		<div class = "div_line"><a href="https://www.geeksforgeeks.org/how-to-make-div-elements-display-inline-using-css/">How to make div elements display inline using css</a></div>
-
-
-		 -->
-
-<!-- 		<div class = "article1">Article 1</div>
-		<div class = "article1">Score</div>
-		<div class = "article1"><a href="<?php echo $links[0];?>"><?php echo $titles[0]; echo " (".$dates_sent[0].")";?></a></div>
- -->
-	
-<!-- 		<div class = "article1">
-			<span class = "article"> Article 1</span>
-			<div class = "article_links">
-			<a href="<?php echo $links[0];?>"><?php echo $titles[0]; echo " (".$dates_sent[0].")";?></a>
-			</div>
-		</div> -->
-
-
-		<!-- <br>
-		<div class = "article"> Article 2</div>
-		<a class = "article_links" href="<?php echo $links[1];?>"><?php echo $titles[1]; echo " (".$dates_sent[1].")";?></a> -->
 
 	</div>
 </body>
