@@ -141,7 +141,7 @@
 
 		<div class = "twitter_bot">
 			<b>
-				<a href="https://twitter.com/avoid_algorithm">What has our twitter bot been reading?</a> 
+				<a href="https://twitter.com/avoid_algorithm" target="_blank">What has our twitter bot been reading?</a> 
 			</b>
 		</div>
 
