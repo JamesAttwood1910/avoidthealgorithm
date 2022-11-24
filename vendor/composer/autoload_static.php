@@ -28,6 +28,14 @@ class ComposerStaticInit0adef1ec7c89a04923f28aebeae3c9d7
         array (
             'Jean85\\' => 7,
         ),
+        'C' => 
+        array (
+            'Composer\\CaBundle\\' => 18,
+        ),
+        'A' => 
+        array (
+            'Abraham\\TwitterOAuth\\' => 21,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -46,6 +54,14 @@ class ComposerStaticInit0adef1ec7c89a04923f28aebeae3c9d7
         'Jean85\\' => 
         array (
             0 => __DIR__ . '/..' . '/jean85/pretty-package-versions/src',
+        ),
+        'Composer\\CaBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/composer/ca-bundle/src',
+        ),
+        'Abraham\\TwitterOAuth\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/abraham/twitteroauth/src',
         ),
     );
 
