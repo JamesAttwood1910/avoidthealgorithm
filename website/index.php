@@ -131,7 +131,7 @@
 			</p>
 
 		<div class="bottombuttons">
-	  		<a href="http://localhost/phpmongodb/website/home.php">Home</a>
+	  		<a href="http://localhost/phpmongodb/website/index.php">Home</a>
 	  		<a href="http://localhost/phpmongodb/website/vote.php">React</a>
 	  		<a href="http://localhost/phpmongodb/website/previous.php">Previous</a>
 	  		<a href="http://localhost/phpmongodb/website/suggest.php">Suggest</a>
