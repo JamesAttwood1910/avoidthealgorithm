@@ -1,0 +1,7 @@
+{
+    "require": {
+        "mongodb/mongodb": "^1.0.0",
+        "phpmailer/phpmailer": "^6.6",
+        "abraham/twitteroauth": "^4.0.1"
+    }
+}
