@@ -131,12 +131,12 @@
 			</p>
 
 		<div class="bottombuttons">
-	  		<a href="http://localhost/phpmongodb/index.php">Home</a>
-	  		<a href="http://localhost/phpmongodb/website/vote.php">React</a>
-	  		<a href="http://localhost/phpmongodb/website/previous.php">Previous</a>
-	  		<a href="http://localhost/phpmongodb/website/suggest.php">Suggest</a>
-	  		<a href="http://localhost/phpmongodb/website/premium.php">Premium</a>
-	  		<a href="http://localhost/phpmongodb/website/logout.php">Logout</a>
+	  		<a href="index.php">Home</a>
+	  		<a href="website/vote.php">React</a>
+	  		<a href="website/previous.php">Previous</a>
+	  		<a href="website/suggest.php">Suggest</a>
+	  		<a href="website/premium.php">Premium</a>
+	  		<a href="website/logout.php">Logout</a>
 		</div> 
 
 		<div class = "twitter_bot">
