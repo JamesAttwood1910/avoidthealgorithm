@@ -22,7 +22,7 @@ session_start(); # Start session - to store user info to be used across multiple
 			header("location: ../login_page.php"); 
 
 		} else if (isset($_POST['no'])) {
-			header("location: home.php");
+			header("location: ../index.php");
 
 		}
 	}
