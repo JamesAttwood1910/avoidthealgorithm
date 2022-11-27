@@ -121,17 +121,7 @@
 
 	$collection = connect_mongodb()->news_db->users;
 
-	$cursor = $collection->find();
-
-
-	foreach ($cursor as $doc) {
-
-		$password_users = $doc->password; # get users password saved in collection
-		echo $password_users;
-		$first_name = $doc->First_name; # get users first name saved in collection
-		# code...
-	}
-
+	var_dump($collection->findOne(array('First_name' => 'chris')));
 
 
 
