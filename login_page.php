@@ -117,6 +117,11 @@
 
             <p>Don't have an account? <a href="user_subscription.php">Sign up now</a>.</p>
 
+            <br>
+
+            <p>Forgotten your login details? <a href="website/password_reset/password_reset.php">Reset password</a>.</p>
+
+
          </form>
 
      </div>

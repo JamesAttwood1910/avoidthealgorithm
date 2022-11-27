@@ -253,12 +253,12 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 
 		<div class="bottombuttons">
-		  		<a href="index.php">Home</a>
-		  		<a href="website/vote.php">React</a>
-		  		<a href="website/previous.php">Previous</a>
-		  		<a href="http://localhost/phpmongodb/website/suggest.php">Suggest</a>
-		  		<a href="http://localhost/phpmongodb/website/premium.php">Premium</a>
-		  		<a href="http://localhost/phpmongodb/website/logout.php">Logout</a>
+		  		<a href="../index.php">Home</a>
+		  		<a href="vote.php">React</a>
+		  		<a href="previous.php">Previous</a>
+		  		<a href="suggest.php">Suggest</a>
+		  		<a href="premium.php">Premium</a>
+		  		<a href="logout.php">Logout</a>
 		</div> 
 
 		<div class="articleinfo">
