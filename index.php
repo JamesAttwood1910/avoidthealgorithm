@@ -115,6 +115,27 @@
 </head>
 <body>
 
+	<?php 
+
+	require("functions/functions.php");
+
+	$collection = connect_mongodb()->news_db->users;
+
+	$cursor = $collection->find();
+
+
+	foreach ($cursor as $doc) {
+
+		$password_users = $doc->password; # get users password saved in collection
+		echo $password_users;
+		$first_name = $doc->First_name; # get users first name saved in collection
+		# code...
+	}
+
+
+
+
+	?>
 	<div class = boundary>
 			<div class = title>
 				<h1> Avoid the Algorithm </h1>
