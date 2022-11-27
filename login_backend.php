@@ -47,7 +47,8 @@ session_start(); # Start session - to store user info to be used across multiple
 		$_SESSION["email"] = $email; 
 		$_SESSION['user'] = $first_name;
 
-		header("location: website/vote.php"); # send to voting page
+		header("location: website/vote.php")
+		echo "this worked"; # send to voting page
 	} else {
 
 		$_SESSION["loggedin"] = false;
