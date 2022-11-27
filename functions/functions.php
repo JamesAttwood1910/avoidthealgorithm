@@ -9,7 +9,7 @@ Data base connection
 
 #mongodb://localhost:27017/
 
-function connect_mongodb($host = "mongodb+srv://james_attwood:<password>@avoidthealgorithm1.jsu1na6.mongodb.net/test") {
+function connect_mongodb($host = "mongodb://localhost:27017/") {
 
 		$connection = new MongoDB\Client($host);
 
