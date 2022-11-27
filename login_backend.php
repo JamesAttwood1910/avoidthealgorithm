@@ -15,7 +15,7 @@ session_start(); # Start session - to store user info to be used across multiple
 
 	<?php
 
-	require_once __DIR__ . '/vendor/autoload.php';
+	require_once 'vendor/autoload.php'
 
 	require("functions/functions.php");
 
