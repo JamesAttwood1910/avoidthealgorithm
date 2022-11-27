@@ -9,19 +9,19 @@ Data base connection
 
 #mongodb://localhost:27017/
 
-function connect_mongodb($host = "mongodb://localhost:27017/") {
+// function connect_mongodb($host = "mongodb://localhost:27017/") {
 
-		$connection = new MongoDB\Client($host);
+// 		$connection = new MongoDB\Client($host);
 
-		return $connection;
+// 		return $connection;
+// 	}
+
+	function connect_mongodb($host = 'mongodb+srv://admin:TM4S3PwGsROwUJbT@avoidthealgorithm1.jsu1na6.mongodb.net/?retryWrites=true&w=majority') {
+		$serverApi = new ServerApi(ServerApi::V1);
+		$connection = new MongoDB\Client(
+	    $host, [], ['serverApi' => $serverApi]);
+	    return $connection;
 	}
-
-	// function connect_mongodb($host = 'mongodb+srv://admin:TM4S3PwGsROwUJbT@avoidthealgorithm1.jsu1na6.mongodb.net/?retryWrites=true&w=majority') {
-	// 	$serverApi = new ServerApi(ServerApi::V1);
-	// 	$connection = new MongoDB\Client(
-	//     $host, [], ['serverApi' => $serverApi]);
-	//     return $connection;
-	// }
 ####################################################
 
 
