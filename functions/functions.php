@@ -16,7 +16,7 @@ Data base connection
 // 		return $connection;
 // 	}
 
-	function connect_mongodb($host = 'mongodb+srv://admin:TM4S3PwGsROwUJbT@avoidthealgorithm1.jsu1na6.mongodb.net/?retryWrites=true&w=majority') {
+	function connect_mongodb($host = 'mongodb+srv://admin:TM4S3PwGsROwUJbT@avoidthealgorithm1.mongodb.net/news_db?retryWrites=true&w=majority') {
 		$serverApi = new ServerApi(ServerApi::V1);
 		$connection = new MongoDB\Client(
 	    $host, [], ['serverApi' => $serverApi]);
