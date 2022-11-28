@@ -115,19 +115,6 @@
 </head>
 <body>
 
-	<?php 
-	require_once __DIR__ . '/vendor/autoload.php';
-
-
-	require("functions/functions.php");
-
-	$collection = connect_mongodb()->news_db->users;
-
-	var_dump($collection->findOne(array('First_name' => 'chris')));
-
-
-
-	?>
 	<div class = boundary>
 			<div class = title>
 				<h1> Avoid the Algorithm </h1>
