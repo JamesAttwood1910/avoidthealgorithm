@@ -141,7 +141,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 	
 	require_once '../vendor/autoload.php';
 
-	$dotenv = Dotenv\Dotenv::createImmutable(__DIR__. '../');
+	$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 
 	$dotenv->load();
 
