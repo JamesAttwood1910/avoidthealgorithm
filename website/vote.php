@@ -128,6 +128,10 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 		require("../functions/functions.php");
 
+		$dotenv = Dotenv\Dotenv::createImmutable(__DIR__. '../');
+
+		$dotenv->load();
+
 		$date = date("Y-m-d");
 
 		$date_test = "2022-11-17";

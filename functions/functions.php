@@ -6,20 +6,19 @@
 Data base connection
 
 */
-
-#mongodb://localhost:27017/
-
-// function connect_mongodb($host = "mongodb://localhost:27017/") {
-
+// # Local host:
+// 	function connect_mongodb($host = 'mongodb://localhost:27017') {
 // 		$connection = new MongoDB\Client($host);
-
-// 		return $connection;
+// 	    return $connection;
 // 	}
 
-	function connect_mongodb($host = 'mongodb://localhost:27017') {
-		$connection = new MongoDB\Client($host);
-	    return $connection;
+# Mongo Atlas Cloud Connection
+	function connect_mongodb() {
+		$connection = new MongoDB\Client($_ENV['MONGODB_URI']);
+		return $connection;
+
 	}
+		
 ####################################################
 
 
