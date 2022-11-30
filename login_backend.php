@@ -51,7 +51,8 @@ session_start(); # Start session - to store user info to be used across multiple
 		$_SESSION["email"] = $email; 
 		$_SESSION['user'] = $first_name;
 
-		header("location: website/vote.php");
+		header("location: website/vote.php")
+		echo "This worked";
 		
 	} else {
 
