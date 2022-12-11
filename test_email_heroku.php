@@ -13,11 +13,11 @@ try {
   $phpmailer->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 
   // ENV Credentials
-  $phpmailer->Host = getenv("MAILERTOGO_SMTP_HOST", true);
-  $phpmailer->Port = intval(getenv("MAILERTOGO_SMTP_PORT", true));
-  $phpmailer->Username = getenv("MAILERTOGO_SMTP_USER", true);
-  $phpmailer->Password = getenv("MAILERTOGO_SMTP_PASSWORD", true);
-  $mailertogo_domain = getenv("MAILERTOGO_DOMAIN", true);
+	$phpmailer->Host = 'smtp.mailtrap.io';
+	$phpmailer->SMTPAuth = true;
+	$phpmailer->Port = 2525;
+	$phpmailer->Username = 'a4f4cf01388d47';
+	$phpmailer->Password = 'a353a30da17f8d';
 
   // Mail Headers
   $phpmailer->setFrom("avoidthealgorithm@gmail.com", "Mailer");
