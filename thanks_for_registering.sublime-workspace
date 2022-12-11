@@ -1,0 +1,773 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"p",
+				"php\t<?php … ?>"
+			],
+			[
+				"second",
+				"secondary_topic_one"
+			],
+			[
+				"sec",
+				"secondary_topic_one"
+			],
+			[
+				"twitter",
+				"TwitterBot"
+			],
+			[
+				"ACC",
+				"ACCESS_SECRET"
+			],
+			[
+				"Cons",
+				"CONSUMER_SECRET"
+			],
+			[
+				"CONSUm",
+				"CONSUMER_KEY"
+			],
+			[
+				"dat",
+				"dates_sent"
+			],
+			[
+				"file_",
+				"file_get_contents"
+			],
+			[
+				"pass",
+				"password_hash"
+			],
+			[
+				"rese",
+				"reset_email"
+			],
+			[
+				"_S",
+				"_SESSION"
+			],
+			[
+				"colle",
+				"collection_reset"
+			],
+			[
+				"reac",
+				"reactivation_code"
+			],
+			[
+				"react",
+				"react_code"
+			],
+			[
+				"coll",
+				"collection_reset"
+			],
+			[
+				"is",
+				"isset"
+			],
+			[
+				"border-bott",
+				"border-bottom-style\tproperty"
+			],
+			[
+				"bord",
+				"border-top-color\tproperty"
+			],
+			[
+				"borde",
+				"border-top-style\tproperty"
+			],
+			[
+				"or",
+				"orange"
+			],
+			[
+				"margi",
+				"margin-top\tproperty"
+			],
+			[
+				"margin",
+				"margin-top\tproperty"
+			],
+			[
+				"padding",
+				"padding-top\tproperty"
+			],
+			[
+				"inline",
+				"inline-block\tdisplay"
+			],
+			[
+				"marg",
+				"margin-left\tproperty"
+			],
+			[
+				"min",
+				"min-width\tproperty"
+			],
+			[
+				"pa",
+				"padding\tproperty"
+			],
+			[
+				"mar",
+				"margin-top\tproperty"
+			],
+			[
+				"ma",
+				"margin-left\tproperty"
+			],
+			[
+				"text",
+				"text-align\tproperty"
+			],
+			[
+				"sites",
+				"sites_df"
+			],
+			[
+				"sites_",
+				"sites_df_ox"
+			],
+			[
+				"da",
+				"Date_added"
+			],
+			[
+				"sent",
+				"dates_sent"
+			],
+			[
+				"art",
+				"article_link"
+			],
+			[
+				"arti",
+				"article_title"
+			],
+			[
+				"title",
+				"titles"
+			],
+			[
+				"time",
+				"time_sent"
+			],
+			[
+				"padd",
+				"padding\tproperty"
+			],
+			[
+				"width",
+				"max-width\tproperty"
+			],
+			[
+				"pad",
+				"padding\tproperty"
+			],
+			[
+				"back",
+				"background-color\tproperty"
+			],
+			[
+				"paddin",
+				"padding-left\tproperty"
+			],
+			[
+				"op",
+				"OperatorInfo"
+			],
+			[
+				"Stat",
+				"Status"
+			],
+			[
+				"Oper",
+				"Operator_URL"
+			],
+			[
+				"ID",
+				"ID_Response"
+			],
+			[
+				"UU",
+				"UUID_Response"
+			],
+			[
+				"sour",
+				"source_website"
+			],
+			[
+				"source",
+				"source_name"
+			],
+			[
+				"find",
+				"find_all"
+			],
+			[
+				"get",
+				"get_topic"
+			],
+			[
+				"class",
+				"class_search"
+			],
+			[
+				"wid",
+				"width\tproperty"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"font-s",
+				"font-size\tproperty"
+			],
+			[
+				"update",
+				"update_terrible"
+			],
+			[
+				"updat",
+				"update_meh"
+			],
+			[
+				"border",
+				"border-color\tproperty"
+			],
+			[
+				"bac",
+				"background-color\tproperty"
+			],
+			[
+				"em",
+				"emails"
+			],
+			[
+				"P",
+				"PHPMailer"
+			],
+			[
+				"user_",
+				"user_email"
+			],
+			[
+				"globa",
+				"global"
+			],
+			[
+				"artic",
+				"articleID"
+			],
+			[
+				"a",
+				"article_title"
+			],
+			[
+				"article",
+				"article_link"
+			],
+			[
+				"sessi",
+				"session_start"
+			],
+			[
+				"passwo",
+				"password"
+			],
+			[
+				"pr",
+				"print"
+			],
+			[
+				"head",
+				"header"
+			],
+			[
+				"password",
+				"password_verify"
+			],
+			[
+				"con",
+				"confirm_password_set"
+			],
+			[
+				"pas",
+				"password_set"
+			],
+			[
+				"confirm",
+				"confirm_password"
+			],
+			[
+				"main",
+				"main_topic"
+			],
+			[
+				"secondary",
+				"secondary_topics"
+			],
+			[
+				"topic",
+				"topic3"
+			],
+			[
+				"topi",
+				"topic1"
+			],
+			[
+				"data",
+				"datalist\tTag"
+			],
+			[
+				"NULL",
+				"NULL"
+			],
+			[
+				"connect",
+				"connect_mongodb"
+			],
+			[
+				"num",
+				"num2"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"user",
+				"user_email"
+			],
+			[
+				"jso",
+				"json_data"
+			],
+			[
+				"news",
+				"news_articles"
+			],
+			[
+				"new",
+				"news_articles"
+			],
+			[
+				"_",
+				"_id"
+			],
+			[
+				"users",
+				"users"
+			],
+			[
+				"u",
+				"user_id"
+			],
+			[
+				"date",
+				"date_sent"
+			],
+			[
+				"url",
+				"url_1"
+			],
+			[
+				"ur",
+				"url_1"
+			],
+			[
+				"ue",
+				"user_id"
+			],
+			[
+				"se",
+				"sent_articles"
+			],
+			[
+				"ne",
+				"news_articles_today"
+			],
+			[
+				"news_ar",
+				"news_articles_today"
+			],
+			[
+				"max",
+				"max-width\tproperty"
+			],
+			[
+				"html_",
+				"html_title"
+			],
+			[
+				"dail",
+				"daily_save_name"
+			],
+			[
+				"file",
+				"file_data"
+			],
+			[
+				"db",
+				"db_news_articles"
+			],
+			[
+				"test",
+				"test_fun1"
+			],
+			[
+				"drop",
+				"drop_num"
+			],
+			[
+				"tes",
+				"test_list"
+			],
+			[
+				"df",
+				"df_sample"
+			],
+			[
+				"Dat",
+				"dataframe"
+			],
+			[
+				"emai",
+				"email_address"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"git:remote",
+				"git: checkout remote branch as local"
+			],
+			[
+				"git:pull",
+				"git: pull from branch"
+			],
+			[
+				"git:sta",
+				"git: status"
+			],
+			[
+				"git:ch",
+				"git: checkout remote branch as local"
+			],
+			[
+				"git: pull",
+				"git: pull"
+			],
+			[
+				"git: stta",
+				"git: status"
+			],
+			[
+				"git: st",
+				"git: status"
+			],
+			[
+				"git: ",
+				"git: status"
+			],
+			[
+				"githu",
+				"github: set remote for integration"
+			],
+			[
+				"git:bran",
+				"git: branch"
+			],
+			[
+				"github: se",
+				"github: set remote for integration"
+			],
+			[
+				"branc",
+				"git: branch"
+			],
+			[
+				"github: set",
+				"github: set remote for integration"
+			],
+			[
+				"git:remo",
+				"git: remote add"
+			],
+			[
+				"github",
+				"github: create pull request"
+			],
+			[
+				"git: remo",
+				"git: remote add"
+			],
+			[
+				"github:set",
+				"github: set remote for integration"
+			],
+			[
+				"git: remote",
+				"git: remote add"
+			],
+			[
+				"git: stat",
+				"git: status"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+			"Terminus",
+			"Package Control: Install Package",
+			"Install Package",
+			"ls"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/xampp/htdocs/heroku_test/page_2.php",
+		"/C/xampp/htdocs/heroku_test/index.php",
+		"/C/xampp/htdocs/heroku_test/composer.json",
+		"/C/Users/james/Documents/document_email_app/send_emails.py",
+		"/C/Users/james/Documents/document_email_app/twitter_bot/twitter_bot_post.py",
+		"/C/xampp/htdocs/phpmongodb/twitter_bot.php",
+		"/C/xampp/htdocs/phpmongodb/website/vote_when_sent_not_sent/vote_not_sent.php",
+		"/C/xampp/htdocs/phpmongodb/website/vote_when_sent_not_sent/vote_when_sent.php",
+		"/C/xampp/htdocs/phpmongodb/website/vote_not_sent.php",
+		"/C/xampp/htdocs/phpmongodb/website/password_reset/reactivation_code.php",
+		"/C/xampp/htdocs/phpmongodb/website/password_reset/password_reset.php",
+		"/C/xampp/htdocs/phpmongodb/website/login_failed.php",
+		"/C/xampp/htdocs/phpmongodb/website/password_reset/password_reset_backend_part_3.php",
+		"/C/xampp/htdocs/phpmongodb/website/password_reset/enter_new_password.php",
+		"/C/xampp/htdocs/phpmongodb/website/password_reset/password_reset_backend_part_2.php",
+		"/C/xampp/htdocs/phpmongodb/website/password_reset/password_reset_backend.php",
+		"/C/xampp/htdocs/phpmongodb/website/password_reset/passwords_incorrect_length.php",
+		"/C/Users/james/Documents/document_email_app/scrapers/bbcnews.py",
+		"/C/xampp/htdocs/phpmongodb/website/suggest.php",
+		"/C/xampp/htdocs/phpmongodb/website/password_reset/reset_code_incorrect.php",
+		"/C/xampp/htdocs/phpmongodb/website/password_reset/no_email_in_db.php",
+		"/C/xampp/htdocs/phpmongodb/login_backend.php",
+		"/C/xampp/htdocs/phpmongodb/website/home.php",
+		"/C/xampp/htdocs/phpmongodb/website/previous.php",
+		"/C/xampp/htdocs/phpmongodb/website/vote.php",
+		"/C/xampp/htdocs/phpmongodb/website/premium.php",
+		"/C/xampp/htdocs/phpmongodb/website/logout.php",
+		"/C/xampp/htdocs/phpmongodb/website/logout_backend.php",
+		"/C/xampp/htdocs/phpmongodb/login_page.php",
+		"/C/xampp/htdocs/phpmongodb/branch_tasks/css_redo_tasks.txt",
+		"/C/xampp/htdocs/phpmongodb/test.py",
+		"/C/xampp/htdocs/phpmongodb/website",
+		"/C/xampp/htdocs/phpmongodb/test.txt",
+		"/C/xampp/htdocs/phpmongodb/thanks_for_registering.php",
+		"/C/xampp/htdocs/phpmongodb/user_subscription.php",
+		"/C/Users/james/.ssh/id_rsa.pub",
+		"/C/Users/james/Documents/oxfordshire_ocm.py",
+		"/C/Users/james/Documents/document_email_app/mongo_play.py",
+		"/C/xampp/htdocs/phpmongodb/php_mongodb_test.php",
+		"/C/xampp/htdocs/phpmongodb/send_email.php",
+		"/C/xampp/htdocs/phpmongodb/welcome.php",
+		"/C/xampp/htdocs/phpmongodb/test_email.php",
+		"/C/Users/james/Documents/document_email_app/scrapers/realnews.py",
+		"/C/Users/james/Documents/document_email_app/daily_articles/json/eater/daily_articles_eater2022-11-07.json",
+		"/C/Users/james/Documents/document_email_app/scrapers/techcrunch.py",
+		"/C/Users/james/Documents/document_email_app/scrapers/eater.py",
+		"/C/xampp/htdocs/phpmongodb/user_subscriptions_backend.php",
+		"/C/xampp/htdocs/phpmongodb/cast_reaction.php",
+		"/C/xampp/htdocs/phpmongodb/website/style.css",
+		"/C/xampp/htdocs/phpmongodb/website/make_suggestion.php",
+		"/C/xampp/htdocs/phpmongodb/website/past_articles.php",
+		"/C/xampp/htdocs/phpmongodb/website/vote_for_article_of_day.php",
+		"/C/xampp/htdocs/PythonProject/hello.py",
+		"/C/xampp/htdocs/phpmongodb/test_r_scripts.php",
+		"/C/xampp/htdocs/phpmongodb/folkstalk.py",
+		"/C/xampp/htdocs/phpmongodb/vendor/composer/installed.json",
+		"/C/Users/james/Documents/document_email_app/daily_sent_articles.json",
+		"/C/xampp/htdocs/phpmongodb/functions/functions.php",
+		"/C/Users/james/Documents/document_email_app/test_email.py",
+		"/C/Users/james/Documents/document_email_app/user_registration.py",
+		"/C/Users/james/Documents/document_email_app/php/hello.php",
+		"/C/xampp/htdocs/php_user_registration.php",
+		"/C/xampp/htdocs/php_mongodb_test.php",
+		"/C/Users/james/Documents/document_email_app/php_mongodb_test2.php",
+		"/C/Users/james/Documents/document_email_app/scratch.py",
+		"/C/Users/james/Documents/document_email_app/scratch2.py",
+		"/C/xampp/htdocs/mongodb/demo.php",
+		"/C/xampp/htdocs/phpmongodb/composer.json",
+		"/C/Users/james/Documents/document_email_app/.env",
+		"/C/Users/james/Documents/document_email_app/mystyle.css",
+		"/C/Users/james/Documents/document_email_app/first_php.php",
+		"/C/Program Files/php-8.1.11-Win32-vs16-x64/php.ini-production",
+		"/C/Program Files/XAMPP/php/php.ini",
+		"/C/Users/james/Documents/document_email_app/email_design.html",
+		"/C/Users/james/Documents/document_email_app/first_php.html",
+		"/C/Users/james/Documents/document_email_app/daily_articles/json/bbc/daily_articles_bbc_2022-10-05.json",
+		"/C/Users/james/airflow/docker-compose.yml",
+		"/C/Users/james/Documents/ocpi_endpoint_validation/Eco-Movement.json",
+		"/C/Users/james/Documents/document_email_app/hello_world.py",
+		"/C/Users/james/Documents/document_email_app/json_save.json",
+		"/C/Users/james/Documents/document_email_app/data_test.json"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "thanks_for_registering.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 302.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
